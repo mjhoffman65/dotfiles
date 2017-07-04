@@ -3,3 +3,4 @@
   roles:
     - secrets
     - apt_upgrade
+    - vim

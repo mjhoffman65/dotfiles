@@ -1,0 +1,10 @@
+---
+
+- become: true
+  apt:
+    name: vim
+
+- name: Copy .vimrc
+  template:
+    src: .vimrc
+    dest: "{{ lookup('env','HOME') }}/.vimrc"
