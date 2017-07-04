@@ -1,6 +1,7 @@
 ---
 
-- become: true
+- name: Install vim package
+  become: true
   apt:
     name: vim
 
