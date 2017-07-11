@@ -50,4 +50,5 @@ set noswapfile
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2
 autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2
+autocmd BufEnter *.feature setlocal expandtab tabstop=2 shiftwidth=2
 
