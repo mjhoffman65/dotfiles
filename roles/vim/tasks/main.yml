@@ -11,4 +11,14 @@
 - name: Copy .vimrc
   template:
     src: vimrc
-    dest: "{{ lookup('env','HOME') }}/.vimrc"
+    dest: "{{ lookup('env', 'HOME') }}/.vimrc"
+
+- name: Create bundle directory
+  file:
+    path: "{{ lookup('env', 'HOME') }}/.vim/bundle"
+    state: directory
+
+- name: Install Vundle
+  git:
+    repo: "https://github.com/VundleVim/Vundle.vim.git"
+    dest: "{{ lookup('env', 'HOME') }}/.vim/bundle/Vundle.vim"
