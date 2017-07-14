@@ -1,9 +1,12 @@
 ---
 
-- name: Install vim package
+- name: Install system package
   become: true
   apt:
-    name: vim
+    name: "{{ item }}"
+  with_items:
+    - vim
+    - git
 
 - name: Copy .vimrc
   template:
