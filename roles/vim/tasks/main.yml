@@ -22,3 +22,6 @@
   git:
     repo: "https://github.com/VundleVim/Vundle.vim.git"
     dest: "{{ lookup('env', 'HOME') }}/.vim/bundle/Vundle.vim"
+
+- name: Install plugins
+  command: vim +PluginInstall +qall
