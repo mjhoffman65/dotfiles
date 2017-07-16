@@ -1,0 +1,16 @@
+---
+
+- name: Install SSH client
+  become: true
+  apt:
+    name: openssh-client
+
+- name: Make .ssh directory
+  file:
+    path: "{{ lookup('env', 'HOME') }}/.ssh"
+    state: directory
+
+- name: Install OnShift key
+  template:
+    src: id_rsa.j2
+    dest: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
