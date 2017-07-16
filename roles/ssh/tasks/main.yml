@@ -14,3 +14,4 @@
   template:
     src: id_rsa.j2
     dest: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
+    mode: 0600
