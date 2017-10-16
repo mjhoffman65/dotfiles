@@ -3,3 +3,5 @@
   email = mjhoffman65@gmail.com
 [core]
   editor = vim
+[alias]
+  st = status
