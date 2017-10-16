@@ -1,6 +1,0 @@
----
-
-- name: Upgrade system
-  become: true
-  apt:
-    upgrade: dist

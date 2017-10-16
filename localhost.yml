@@ -1,7 +1,0 @@
----
-- hosts: dotfiles
-  roles:
-    - secrets
-    - apt_upgrade
-    - ssh
-    - vim
