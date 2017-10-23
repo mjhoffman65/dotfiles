@@ -5,3 +5,5 @@
   editor = vim
 [alias]
   st = status
+  co = checkout
+  br = branch
